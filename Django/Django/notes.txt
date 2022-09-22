@@ -8,3 +8,6 @@ python3 manage.py runserver
 python3 manage.py startapp hello
 
 # add hello app to setting.py under INSTALLED_APPS
+# create urls.py in hello folder
+# add hello.urls to Django>urls.py
+# add hello.py to hello>urls.py
