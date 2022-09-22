@@ -9,5 +9,10 @@ python3 manage.py startapp hello
 
 # add hello app to setting.py under INSTALLED_APPS
 # create urls.py in hello folder
-# add hello.urls to Django>urls.py
-# add hello.py to hello>urls.py
+# add hello.urls to Django>urls.py (url = domain.com/hello)
+# add "" hello.py to hello>urls.py (url = domain.com/hello/)
+# add "me" me.py to hello>url.py (url = domain.com/hello/me)
+
+# view.py "hello/index.html" 
+# create template/hello/index.html
+# treat index.html  as normal html file

@@ -3,4 +3,13 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Hello, world.")
+    return render(request, "hello/index.html")
+
+def me(request):
+    return HttpResponse("Hello, my name is <your name>!")
+
+def greet(request, name):
+    return render(request, "hello/greet.html", {
+        "name": name.capitalize()
+    }
+    )
