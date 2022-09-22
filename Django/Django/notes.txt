@@ -1,0 +1,10 @@
+# terminal commands
+# cd to file
+# create django app
+django-admin startproject Django
+# start live local server
+python3 manage.py runserver              
+# start app called 'hello'
+python3 manage.py startapp hello
+
+# add hello app to setting.py under INSTALLED_APPS
