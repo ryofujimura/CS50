@@ -16,3 +16,7 @@ python3 manage.py startapp hello
 # view.py "hello/index.html" 
 # create template/hello/index.html
 # treat index.html  as normal html file
+
+# "no such table: django_session"
+# migrate data to database
+# run python3 manage.py migrate
