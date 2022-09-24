@@ -4,19 +4,20 @@
     <title>Colors</title>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-           document.querySelectorAll('button').forEach(button => {
-            button.onclick = function(){
-                document.querySelector('#header').style.color = button.dataset.color;
-            }
-           });
+            document.querySelector("select").onchange = function() {
+                document.querySelector("#header").style.color = this.value;
+            };
         });
     </script>
 </head>
 <body>
     <h1 id="header">Colors</h1>
-    <button data-color="red" >Red</button>
-    <button data-color="green">Green</button>
-    <button data-color="blue" >Blue</button>
+    <select>
+        <option value="black">Black</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+    </select>
    
 </body>
 </html>
