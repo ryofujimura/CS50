@@ -9,7 +9,8 @@ def me(request):
     return HttpResponse("Hello, my name is <your name>!")
 
 def greet(request, name):
-    return render(request, "hello/greet.html", {
-        "name": name.capitalize()
-    }
+    return render(
+        request, "hello/greet.html", {
+             "name": name.capitalize()
+        }
     )
